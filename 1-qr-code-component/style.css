@@ -126,6 +126,7 @@ body {
 
 .card .card-details {
   font-size: var(--fs-200);
+  margin-bottom: 20px;
 }
 
 footer {
