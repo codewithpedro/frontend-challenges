@@ -1,0 +1,158 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* Colors */
+  --clr-white: 0, 0%, 100%;
+  --clr-light-blue: 212, 45%, 89%;
+  --clr-grey-blue: 220, 15%, 55%;
+  --clr-dark-blue: 218, 44%, 22%;
+
+  /* Fonts */
+  --fs-200: 0.8rem;
+  --fs-400: 1.1rem;
+
+  /* Font Family */
+  --ff-1: "Outfit", sans-serif;
+
+  /* Font Weight */
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+/* ------------------- */
+/* Resets   */
+/* ------------------- */
+
+/* Box-sizing */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+small,
+body,
+picture,
+img {
+  margin: 0;
+}
+
+h1,
+h2,
+p,
+small {
+  line-height: 1.4;
+}
+
+picture,
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  font-family: var(--ff-1);
+  font-size: var(--fs-400);
+}
+
+/* ------------------- */
+/* Utility             */
+/* ------------------- */
+
+/* General */
+
+.bg-light-blue {
+  background-color: hsl(var(--clr-light-blue));
+}
+
+.bg-grey-blue {
+  background-color: hsl(var(--clr-grey-blue));
+}
+
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+
+.text-dark-blue {
+  color: hsl(var(--clr-dark-blue));
+}
+
+.text-grey-blue {
+  color: hsl(var(--clr-grey-blue));
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Layout */
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.card-img {
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.card .card-container {
+  width: 80%;
+  margin: auto;
+}
+
+.card .card-title {
+  font-size: var(--fs-400);
+  margin-bottom: 15px;
+}
+
+.card .card-details {
+  font-size: var(--fs-200);
+}
+
+footer {
+  padding: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: var(--fs-400);
+}
+
+@media (min-width: 300px) {
+  .card {
+    width: 300px;
+  }
+
+  .main {
+    min-height: 80vh;
+  }
+}
+
+@media (min-width: 900px) {
+  :root {
+    --fs-400: 1.4rem;
+    --fs-200: 1rem;
+  }
+
+  .card {
+    width: 350px;
+  }
+}
