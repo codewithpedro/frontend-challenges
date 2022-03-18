@@ -125,7 +125,7 @@ p {
   width: 300px;
   background-color: hsl(var(--clr-dark-blue) / 0.5);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .rating-card .star {
