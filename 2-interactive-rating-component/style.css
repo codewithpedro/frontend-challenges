@@ -23,6 +23,13 @@
   --ff-1: "Overpass", sans-serif;
 }
 
+@media (min-width: 600px) {
+  :root {
+    --fs-400: 1rem;
+    --fs-500: 2rem;
+  }
+}
+
 /* ------------------- */
 /* Reset               */
 /* ------------------- */
@@ -184,6 +191,22 @@ p {
 .rating-card .btn:hover {
   background-color: hsl(var(--clr-white));
   color: hsl(var(--clr-orange));
+}
+
+@media (min-width: 600px) {
+  .rating-card {
+    width: 400px;
+  }
+
+  .rating-card .rating-list {
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .rating-card .rating-list .circle-rate {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .post-card {
