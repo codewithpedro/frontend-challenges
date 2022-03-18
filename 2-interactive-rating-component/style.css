@@ -65,7 +65,7 @@ body {
   background-color: hsl(var(--clr-super-dark-blue));
   color: hsl(var(--clr-white));
   line-height: 1.5;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 /* Remove animations */
@@ -104,11 +104,13 @@ p {
   align-items: center;
 }
 
-/* Layout */
-
-.container {
+.main {
   min-height: 100vh;
 }
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
 
 .rating-card {
   width: 300px;
@@ -153,6 +155,11 @@ p {
   color: hsl(var(--clr-light-grey));
 }
 
+.rating-card .rating-list .circle-rate:hover {
+  background-color: hsl(var(--clr-light-grey));
+  color: white;
+}
+
 .rating-card .btn {
   width: 100%;
   padding: 10px 0;
@@ -163,4 +170,9 @@ p {
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.rating-card .btn:hover {
+  background-color: hsl(var(--clr-white));
+  color: hsl(var(--clr-orange));
 }
