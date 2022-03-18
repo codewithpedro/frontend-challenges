@@ -87,10 +87,12 @@ body {
 /* Text */
 h1 {
   font-size: var(--fs-500);
+  font-weight: var(--fw-700);
 }
 
 p {
   font-size: var(--fs-400);
+  color: hsl(var(--clr-light-grey));
 }
 
 /* General */
@@ -114,7 +116,7 @@ p {
 
 .rating-card {
   width: 300px;
-  background-color: hsl(var(--clr-dark-blue));
+  background-color: hsl(var(--clr-dark-blue) / 0.5);
   padding: 30px;
   border-radius: 10px;
 }
@@ -134,17 +136,19 @@ p {
 
 .rating-card .title {
   margin-bottom: 0.4rem;
-  font-weight: var(--fw-700);
 }
 
 .rating-card .desc {
   margin-bottom: 1.5rem;
-  color: hsl(var(--clr-light-grey));
 }
 
 .rating-card .rating-list {
-  gap: 20px;
+  gap: 10px;
   margin-bottom: 20px;
+}
+
+.rating-card .rating-list input {
+  display: none;
 }
 
 .rating-card .rating-list .circle-rate {
@@ -155,9 +159,14 @@ p {
   color: hsl(var(--clr-light-grey));
 }
 
-.rating-card .rating-list .circle-rate:hover {
+.rating-card .rating-list input:not(:checked) + label:hover {
   background-color: hsl(var(--clr-light-grey));
   color: white;
+}
+
+.rating-card .rating-list input[type="radio"]:checked + label {
+  background-color: hsl(var(--clr-orange));
+  color: hsl(var(--clr-white));
 }
 
 .rating-card .btn {
@@ -175,4 +184,47 @@ p {
 .rating-card .btn:hover {
   background-color: hsl(var(--clr-white));
   color: hsl(var(--clr-orange));
+}
+
+.post-card {
+  width: 300px;
+  background-color: hsl(var(--clr-dark-blue) / 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+}
+
+.post-card img {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 2.5em;
+}
+
+.post-card--report {
+  background-color: hsl(var(--clr-light-grey) / 0.3);
+  border-radius: 50px;
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  padding-bottom: 3px;
+  padding-top: 7px;
+}
+
+.post-card--report p {
+  color: hsl(var(--clr-orange));
+}
+
+.post-card--title {
+  margin-bottom: 0.5em;
+}
+
+.post-card--desc {
+  margin-bottom: 0.5em;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: hsl(var(--clr-dark-blue) / 0.5);
 }

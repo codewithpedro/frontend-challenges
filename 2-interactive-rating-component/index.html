@@ -15,7 +15,7 @@
 
   <!-- Rating state start -->
   <main class="main flex flex-center">
-    <div class="rating-card ">
+    <div class="rating-card">
       <div class="star-container flex flex-center">
         <img src="./images/icon-star.svg" alt="icon star" class="star">
       </div>
@@ -24,32 +24,34 @@
       
       <p class="desc">Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
+
+      <form>
+        <div class="rating-list flex flex-center">
+          <input type="radio" name="rate" value="1" id="rate-1">
+          <label for="rate-1" class="circle-rate flex flex-center">1</label>
+          <input type="radio" name="rate" value="2" id="rate-2" >
+          <label for="rate-2" class="circle-rate flex flex-center">2</label>
+          <input type="radio" name="rate" value="3" id="rate-3">
+          <label for="rate-3" class="circle-rate flex flex-center">3</label>
+          <input type="radio" name="rate" value="4" id="rate-4">
+          <label for="rate-4" class="circle-rate flex flex-center">4</label>
+          <input type="radio" name="rate" value="5" id="rate-5">
+          <label for="rate-5" class="circle-rate flex flex-center">5</label>
+        </div>
+        <button class="btn" type="button">Submit</button>
+      </form>
+    </div>
+    <div class="post-card">
+      <img src="./images/illustration-thank-you.svg" alt="thank you illustartion" class="post-form">
+      <div class="post-card--report flex flex-center"></div>
       
-      <div class="rating-list flex flex-center">
-        <div class="circle-rate flex flex-center">1</div>
-        <div class="circle-rate flex flex-center">2</div>
-        <div class="circle-rate flex flex-center">3</div>
-        <div class="circle-rate flex flex-center">4</div>
-        <div class="circle-rate flex flex-center">5</div>
-      </div>
-         
-      <button class="btn">Submit</button>
+
+      <h1 class="post-card--title">Thank you!</h1>
+
+      <p class="post-card--desc">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
     </div>
   </main>
-
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected  Add rating here out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
 
   <footer>
     <div class="attribution">
