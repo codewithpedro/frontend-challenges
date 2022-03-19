@@ -12,29 +12,44 @@
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
-  <section>
+  <section class="flex flex-center">
     <div class="card"> 
-      <h1 class="card--title">Equilibrium #3429</h1>
+      <div class="card--img-container">
+        <img src="./images/image-equilibrium.jpg" alt="" class="card--img-main">
+        <div class="card--img-over-bg"></div>
+        <div class="card--img-over-center">
+          <img src="./images/icon-view.svg" alt="eyeball icon">
+        </div>
+      </div>
+      <h1 class="card--title"><a href="#">Equilibrium #3429</a></h1>
       
       <p class="card--desc">Our Equilibrium collection promotes balance and calm.</p>
       
-      <div class="flex">
-        <p class="card--curancy">0.041 ETH</p>
-        <p class="card--time">3 days left</p>
+      <div class="card--stats flex flex-space-between">
+        <div class="flex flex-align-center">
+          <img src="./images/icon-ethereum.svg" alt="ditigal currency" class="card--img-ethereum">
+          <p class="card--currency">0.041 ETH</p>
+        </div>
+        <div class="flex flex-align-center">
+          <img src="./images/icon-clock.svg" alt="clock" class="card--img-clock">
+          <p class="card--time">3 days left</p>
+        </div>
       </div>
       
       <hr>
       
-      <div class="flex">
-        <img src="./images/image-avatar.png" alt="portrait picture" class="card--profile"/>
-        <p class="author"> Creation of <a href="#">Jules Wyvern</a></p>
+      <div class="card--profile flex flex-align-center">
+        <img src="./images/image-avatar.png" alt="portrait picture" class="card--profile-img"/>
+        <p class="card--author "> Creation of <a href="#">Jules Wyvern</a></p>
       </div>
     </div>
   </section>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/jovanydev">Jovany Gomez</a>.
+    </div>
+  </footer>
 </body>
 </html>
