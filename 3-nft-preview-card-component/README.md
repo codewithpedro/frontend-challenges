@@ -53,7 +53,9 @@ To see how you can add code snippets, see below:
         <div class="card--img-over-center">
           <img src="./images/icon-view.svg" alt="eyeball icon">
         </div>
-      </div>```
+      </div>
+```
+
 ```css
 .card--img-container {
   position: relative;
