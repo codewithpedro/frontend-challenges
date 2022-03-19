@@ -1,0 +1,68 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* Color */
+  --clr-soft-blue: 215 51% 70%;
+  --clr-cyan: 178 100% 50%;
+  --clr-very-dark-blue: 217 54% 11%;
+  --clr-blue: 216 50% 16%;
+  --clr-light-blue: 215 32% 27%;
+  --clr-white: 0 0% 100%;
+
+  /* Font size */
+  --fs-400: 1.2rem;
+
+  /* Font family*/
+  /* Weights 300, 400, 600 */
+  --ff-1: "Outfit", sans-serif;
+}
+
+/* ------------------- */
+/* Resets              */
+/* ------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+picture,
+img,
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-weight: 400;
+}
+
+img,
+picture {
+  width: 100%;
+  display: block;
+}
+
+body {
+  background-color: hsl(var(--clr-very-dark-blue));
+  font-family: var(--ff-1);
+  font-size: var(--fs-400);
+  color: hsl(var(--clr-white));
+  line-height: 1.5;
+  min-height: 100vh;
+}
+/* ------------------- */
+/* Components          */
+/* ------------------- */
