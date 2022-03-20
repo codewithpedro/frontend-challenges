@@ -209,8 +209,18 @@ body {
 }
 
 @media (min-width: 900px) {
+  .hero--desc {
+    max-width: 40ch;
+  }
+}
+
+@media (min-width: 1200px) {
   .hero--content {
-    margin-top: 40px;
+    margin-top: 20px;
+  }
+
+  .hero--desc {
+    max-width: 40ch;
   }
 }
 
