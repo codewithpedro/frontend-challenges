@@ -174,7 +174,7 @@ body {
 @media (min-width: 600px) {
   .hero--img-main {
     object-fit: cover;
-    object-position: right center;
+    object-position: 90% center;
     background-position: right center;
     border-radius: unset;
     border-top-right-radius: 5px;
