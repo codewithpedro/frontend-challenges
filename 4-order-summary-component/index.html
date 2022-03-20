@@ -11,25 +11,25 @@
   <title>Frontend Mentor | Order summary card</title>
 </head>
 <body>
-  <div class="column flex flex-center">
+  <div class="height flex flex-center">
     <div class="card">
       <img src="./images/illustration-hero.svg" alt="a person dancing behind a city background" class="card--img-main">
       <div class="card--container">
         <h1 class="card--title">Order Summary</h1>
         <p class="card--desc">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like! </p>
-        <div class="card--subscription flex flex-space-between">
-          <div class="card--plan flex">
-            <img src="./images/icon-music.svg" alt="music icon">
-            <div class="flex flex-column">
-              <p>Annual Plan</p>
+        <div class="card--sub flex flex-space-between flex-align-center">
+          <div class="card--plan flex flex-align-center">
+            <img src="./images/icon-music.svg" alt="music icon" class="card--plan-img">
+            <div class="card--plan-content flex flex-column">
+              <p class="card--plan-title black">Annual Plan</p>
               <p>$59.99/year</p>
             </div>
           </div>
           <a href="#">Change</a>
         </div>
 
-        <button class="card--payment">Proceed to Payment</button>
-        <button class="card--cancel">Cancel Order</button>
+        <button class="btn-blue card--payment-btn">Proceed to Payment</button>
+        <button class="btn-transparent">Cancel Order</button>
       </div>
     </div>
   </div>
