@@ -104,6 +104,8 @@ body {
 @media (min-width: 600px) {
   body {
     background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+    background-size: unset;
   }
 }
 
