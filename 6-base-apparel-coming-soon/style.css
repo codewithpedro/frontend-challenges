@@ -1,0 +1,75 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+:root {
+  /* Colors */
+  --clr-desaturated-red: 0 36% 70%;
+  --clr-soft-red: 0 93% 68%;
+  --clr-dark-gray-red: 0 6% 25%;
+  --clr-black: 0 0% 100%;
+
+  /* Font size */
+  --fs-300: 0.8rem;
+  --fs-400: 1rem;
+  --fs-500: 1.3rem;
+  --fs-600: 1.5rem;
+
+  /* Font family */
+
+  /* Weight 300, 400, 600 */
+  --ff-1: "Josefine Sans", sans-serif;
+}
+
+/* ------------------- */
+/* Resets              */
+/* ------------------- */
+
+/* Box sizing */
+body {
+  box-sizing: border-box;
+}
+
+/* Margin reset */
+h1,
+h2,
+h3,
+h4,
+p,
+picture,
+img,
+body {
+  margin: 0;
+}
+
+/* Easier img */
+img,
+picture {
+  width: 100%;
+  display: block;
+}
+
+h1 {
+  font-size: var(--fs-600);
+}
+
+p {
+  font-size: var(--fs-300);
+}
+
+body {
+  font-family: var(--ff-1);
+  color: var(--clr-black);
+  font-weight: 400;
+  line-height: 1.5;
+  background: linear-gradient(135deg, hsl(0, 0, 100%), hsl(0, 100%, 98%));
+}
+
+@media (min-width: 600px) {
+  body {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  }
+}
+
+/* ------------------- */
+/* Utility             */
+/* ------------------- */
