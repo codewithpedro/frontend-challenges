@@ -9,15 +9,15 @@
   --clr-black: 0 0% 100%;
 
   /* Font size */
-  --fs-300: 0.8rem;
+  --fs-300: 0.9rem;
   --fs-400: 1rem;
   --fs-500: 1.3rem;
   --fs-600: 1.5rem;
-
+  --fs-700: 3rem;
   /* Font family */
 
   /* Weight 300, 400, 600 */
-  --ff-1: "Josefine Sans", sans-serif;
+  --ff-1: "Josefin Sans", sans-serif;
 }
 
 /* ------------------- */
@@ -49,27 +49,148 @@ picture {
 }
 
 h1 {
-  font-size: var(--fs-600);
+  font-size: var(--fs-700);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 10px;
+}
+
+h1 span {
+  color: hsl(var(--clr-desaturated-red));
+  font-weight: 300;
 }
 
 p {
   font-size: var(--fs-300);
+  color: hsl(var(--clr-desaturated-red));
+  font-weight: 400;
 }
 
 body {
   font-family: var(--ff-1);
   color: var(--clr-black);
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.7;
   background: linear-gradient(135deg, hsl(0, 0, 100%), hsl(0, 100%, 98%));
 }
 
 @media (min-width: 600px) {
   body {
-    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    /* background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); */
   }
 }
 
 /* ------------------- */
 /* Utility             */
 /* ------------------- */
+.height {
+  min-height: 100vh;
+}
+
+.container {
+  padding: 0 25px;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+@media (min-width: 400px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* ------------------- */
+/* Componet            */
+/* ------------------- */
+.btn {
+  padding: 15px 35px;
+  border-radius: 15px;
+  border: none;
+}
+
+.btn-pink-gradient {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+/* ------------------- */
+/* Layout              */
+/* ------------------- */
+
+nav {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.nav--logo {
+  width: 100px;
+}
+
+.main-desktop-img {
+  display: none;
+}
+
+.main-mobile-img {
+  max-height: 320px;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: 3.5em;
+}
+
+@media (min-width: 600px) {
+  .main-desktop-img {
+    display: block;
+  }
+
+  .main-mobile-img {
+    display: none;
+  }
+}
+
+.main--title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.main--desc {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid 1px hsl(var(--clr-desaturated-red) / 0.5);
+}
+
+.email-element {
+  position: relative;
+}
+
+.email-element input {
+  position: absolute;
+}
+
+.email-element .btn-placement {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
