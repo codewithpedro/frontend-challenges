@@ -166,12 +166,19 @@ nav {
   margin-bottom: 30px;
 }
 
+form {
+  position: relative;
+}
+
 label {
   display: block;
   margin-bottom: 5px;
 }
 
 input {
+  display: block;
+  position: absolute;
+  z-index: -1;
   font-family: inherit;
   font-size: 100%;
   padding: 15px;
@@ -179,18 +186,10 @@ input {
   border: solid 1px hsl(var(--clr-desaturated-red) / 0.5);
 }
 
-.email-element {
-  position: relative;
-}
-
-.email-element input {
-  position: absolute;
-}
-
-.email-element .btn-placement {
+.btn-placement {
   position: absolute;
   z-index: 2;
-  top: 0;
+  top: 30px;
   right: 0;
   cursor: pointer;
 }
