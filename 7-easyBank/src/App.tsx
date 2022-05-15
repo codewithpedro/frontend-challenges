@@ -8,13 +8,21 @@ import LatestArticles from './components/LatestArticles'
 import Footer from './components/Footer'
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleChange() {
+    setIsOpen(prevState => !prevState);
+  }
+
   return (
-    <div className="home">
-      <Navigation></Navigation>
-      <Hero></Hero>
-      <ChooseSection></ChooseSection>
-      <LatestArticles></LatestArticles>
-      <Footer></Footer>
+    <div className="home" onClick={() => {if (isOpen) setIsOpen(false)}}>
+      <Navigation isOpen={isOpen} handleChange={handleChange}></Navigation>
+      <div className={isOpen ? "darken" : ""}>
+        <Hero></Hero>
+        <ChooseSection></ChooseSection>
+        <LatestArticles></LatestArticles>
+        <Footer></Footer>
+      </div>
     </div>
   )
 }
