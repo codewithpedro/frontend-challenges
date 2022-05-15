@@ -12,7 +12,9 @@ export default function LatestArticles(){
     <div className="articles">
       <div className="container">
         <h3>Latest Articles</h3>
-        {currentArticles}
+        <div className="articles-flex">
+          {currentArticles}
+        </div>
       </div>
     </div>
   )
