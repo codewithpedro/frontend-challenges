@@ -1,19 +1,17 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../img/logo.svg";
 
-export default function Navigation(){
-  const [isOpen, setIsOpen] = useState(false);
-
+export default function Navigation({isOpen, handleChange} : {isOpen: boolean, handleChange: Function}){
   return (
     <div className="nav">
       <div className="container">
         <div className="flex">
           <img src={logo} className="logo"/>
 
-          <i className="fa-solid fa-bars" onClick={() => setIsOpen(prevState => !prevState)}></i>
-          <nav className={isOpen ? "active" : "not-active"}>
-            <ul>
+          <button className="mobile-nav" onClick={() => handleChange()}><i className={isOpen? "fa-solid fa-x" : "fa-solid fa-bars"}></i></button>
+          
+          <nav className={isOpen ? "navbar active" : "navbar"}>
+            <ul className="navbar-list">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/">About</Link></li>
               <li><Link to="/">Contact</Link></li>
@@ -22,7 +20,7 @@ export default function Navigation(){
             </ul>
           </nav>
 
-          <button className="primary">Request Invite</button>
+          <button className="primary-btn">Request Invite</button>
         </div>
       </div>
     </div>
